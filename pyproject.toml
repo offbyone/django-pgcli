@@ -1,0 +1,41 @@
+
+[project]
+name = "django-pgcli"
+version = "1.0.1"
+description = "Database runtime for Django that replaces psql with pgcli."
+keywords = ["django pgcli postgres database"]
+readme = "README.md"
+authors = [
+    {name = "Ash Christopher", email = "ash.christopher@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+dependencies = [
+    "Django>=2.2.13",
+    "pgcli",
+    "psycopg",
+]
+license = {text = "BSD"}
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/ashchristopher/django-pgcli"
+
+[dependency-groups]
+dev = [
+    "psycopg[binary]",
+    "pytest>=8.3.3",
+    "wheel",
+    "flake8",
+]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"

@@ -38,7 +38,7 @@ lint:
 	flake8 django-pgcli tests
 
 test:
-	python setup.py test
+	python -mpytest
 
 test-all:
 	tox
