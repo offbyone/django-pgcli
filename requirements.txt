@@ -1,5 +1,0 @@
-wheel==0.34.2
-psycopg2
-pgcli
-Django>=2.2.13
-twine
