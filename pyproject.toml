@@ -50,3 +50,8 @@ packages = ["src/django_pgcli5"]
 [tool.hatch.version]
 path = "src/django_pgcli5/__init__.py"
 pattern = '__version__ = "(?P<version>[^"]+)"'
+
+[tool.ruff]
+exclude = [
+    "docs/conf.py",
+]
