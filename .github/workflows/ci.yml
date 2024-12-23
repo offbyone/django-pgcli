@@ -194,11 +194,11 @@ jobs:
       - run: uv venv --python $(cat .python-version-default)
       - run: uv pip install -e .[dev]
 
-      - name: Ensure we can import the django_pgcli package
+      - name: Ensure we can import the django_pgcli5 package
         run: |
           source .venv/bin/activate
 
-          python -Ic 'import django_pgcli; print(django_pgcli.__version__)'
+          python -Ic 'import django_pgcli5; print(django_pgcli5.__version__)'
 
   # Ensure everything required is passing for branch protection.
   required-checks-pass:

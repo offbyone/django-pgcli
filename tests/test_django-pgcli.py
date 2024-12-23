@@ -3,7 +3,7 @@
 
 import unittest
 
-import django_pgcli  # noqa
+import django_pgcli5  # noqa
 
 
 class RuntimeTestCase(unittest.TestCase):
@@ -11,7 +11,7 @@ class RuntimeTestCase(unittest.TestCase):
         from django.db.backends.postgresql import base
 
         self.assertEqual(
-            base.DatabaseWrapper.client_class, django_pgcli.PgCLIDatabaseClient
+            base.DatabaseWrapper.client_class, django_pgcli5.PgCLIDatabaseClient
         )
 
     def test_database_client_calls_pgcli_executable(self):
