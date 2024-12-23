@@ -41,6 +41,14 @@ merge-coverage:
     # Report again and fail if under 70%.
     uv run coverage report --fail-under=70
 
+docs:
+    uv tool run --from sphinx sphinx-apidoc -o docs/ src/django_pgcli5
+    make -C docs clean
+    make -C docs html
+
+docs-show: docs
+    open docs/_build/html/index.html
+
 dist:
     uv build
     ls -l dist
