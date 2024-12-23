@@ -1,6 +1,10 @@
-# django-pgcli
+# django-pgcli5
 
-[![Build Status](https://travis-ci.org/ashchristopher/django-pgcli.svg?branch=master)](https://travis-ci.org/ashchristopher/django-pgcli) [![PyPI version](https://badge.fury.io/py/django-pgcli.svg)](https://badge.fury.io/py/django-pgcli) ![PyPI - License](https://img.shields.io/pypi/l/django-mycli)
+[![Build Status](https://github.com/offbyone/django-pgcli/actions/workflows/ci.yml/badge.svg)](https://github.com/offbyone/django-pgcli/actions/workflows/ci.yml)
+
+[![PyPI version](https://badge.fury.io/py/django-pgcli5.svg)](https://badge.fury.io/py/django-pgcli5) 
+
+![PyPI - License](https://img.shields.io/pypi/l/django-pgcli5)
 
 Replaces your existing *psql* cli for Postgres with *pgcli* which provides enhancements such as auto-completion and syntax highlighting. Visit the [pgcli website](https://www.pgcli.com/) to learn more about the **pgcli** client.
 
@@ -8,14 +12,13 @@ Replaces your existing *psql* cli for Postgres with *pgcli* which provides enhan
 
 To install the package:
 
-    `pip install django-pgcli`
+    `pip install django-pgcli5`
 
-Add `django_pgcli` to your `INSTALLED_APPS` setting in your settings.py file.
+Add `django_pgcli5` to your `INSTALLED_APPS` setting in your settings.py file.
 
     INSTALLED_APPS = [
         ...,
-        'django_pgcli',
-        
+        'django_pgcli5',
     ]
 
 ## Usage

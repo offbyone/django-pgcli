@@ -1,10 +1,11 @@
 [project]
-name = "django-pgcli"
+name = "django-pgcli5"
 dynamic = ["version"]
 description = "Database runtime for Django that replaces psql with pgcli."
 keywords = ["django pgcli postgres database"]
 readme = "README.md"
 authors = [
+    {name = "Chris R", email = "offline@offby1.net"},
     {name = "Ash Christopher", email = "ash.christopher@gmail.com"},
 ]
 classifiers = [
@@ -18,7 +19,7 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-    "Django>=2.2.13",
+    "Django>=5",
     "pgcli",
     "psycopg",
 ]
@@ -26,7 +27,7 @@ license = {text = "BSD"}
 requires-python = ">=3.10"
 
 [project.urls]
-Homepage = "https://github.com/ashchristopher/django-pgcli"
+Homepage = "https://github.com/offbyone/django-pgcli5"
 
 [dependency-groups]
 dev = [
@@ -44,8 +45,8 @@ requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/django_pgcli"]
+packages = ["src/django_pgcli5"]
 
 [tool.hatch.version]
-path = "src/django_pgcli/__init__.py"
+path = "src/django_pgcli5/__init__.py"
 pattern = '__version__ = "(?P<version>[^"]+)"'
