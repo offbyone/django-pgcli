@@ -17,5 +17,5 @@ class PgCLIDatabaseClient(DatabaseClient):
         # PgCLIDatabaseClient.runshell_db(self.connection.get_connection_params(), parameters=parameters)
 
 
-base.DatabaseWrapper.__old_database_client_class = base.DatabaseClient
+base.DatabaseWrapper.__old_database_client_class = base.DatabaseClient  # type: ignore
 base.DatabaseWrapper.client_class = PgCLIDatabaseClient
