@@ -33,8 +33,11 @@ Homepage = "https://github.com/ashchristopher/django-pgcli"
 dev = [
     "psycopg[binary]",
     "pytest>=8.3.3",
-    "wheel",
-    "flake8",
+    "pyright>=1.1.387",
+    "pytest-xdist[psutil]",
+    "pytest-asyncio>=0.24.0",
+    "pytest-django>=4.9.0",
+    "coverage[toml]>=5.3",
 ]
 
 [build-system]
