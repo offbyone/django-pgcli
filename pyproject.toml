@@ -48,8 +48,10 @@ build-backend = "hatchling.build"
 packages = ["src/django_pgcli5"]
 
 [tool.hatch.version]
-path = "src/django_pgcli5/__init__.py"
-pattern = '__version__ = "(?P<version>[^"]+)"'
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/django_pgcli5/_version.py"
 
 [tool.ruff]
 exclude = [
